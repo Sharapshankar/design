@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>login pagez</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Welcome to user<br><br>
+                NAME :
+            <script>
+                document.write(localStorage.getItem('name'))
+            </script> 
+            </h2>  
+            <h3>
+                EMAIL :
+            <script>
+                document.write(localStorage.getItem('email'))
+            </script>
+            </h3>  
+            <button type="button" class="btn-primary" id="reg-btn" onclick="logout()">logout</button>
+            <script>
+                function logout(){
+                    window.location.href="design.html"
+        }
+    </script>
+        </div>
+    </div>
+</body>
